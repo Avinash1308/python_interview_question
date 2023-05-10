@@ -1,0 +1,29 @@
+def is_prime(num):               # it is the functionn for checking prime number 
+  prime=True
+  for i in range(2,int(num//2)+1):
+    if(num%i==0):
+      prime=False
+      break
+  return prime
+  
+  
+  
+def closest_prime(num):                    # function find the closest prime number
+  if(is_prime(num)):                       # if number itself is prime then return num
+    return num
+  lower=num-1
+  while(is_prime(lower)==False):           # check for the lower prime number
+    lower-=1
+  higher=num=1
+  while(is_prime(higher)==False):          # check for the higher prime number
+    higher+=1
+
+  if(num-lower<=higher-num):
+    print(lower)
+  else:
+    print(higher)
+    
+    
+  
+num=15
+closest_prime(num)                            # closest_prime function call here
