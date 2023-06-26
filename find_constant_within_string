@@ -1,0 +1,11 @@
+def find_constants(string):
+    constants = []
+    for char in string:
+        if char.isupper():
+            constants.append(char)
+    return constants
+
+# Example usage
+my_string = "Hello World! How Are You?"
+constant_chars = find_constants(my_string)
+print(constant_chars)  # Output: ['H', 'W', 'H', 'A', 'Y']
