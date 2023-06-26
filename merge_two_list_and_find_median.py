@@ -13,4 +13,4 @@ else:
   median=sorted_list[length//2]
 print(median)
 # output
-# 5.5
+# 4.5
