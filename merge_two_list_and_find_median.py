@@ -8,7 +8,7 @@ length=len(sorted_list)
 print(length)
 print(length//2)
 if(length%2==0):
-  median=(sorted_list[length//2+1]+sorted_list[length//2])/2
+  median=(sorted_list[length//2-1]+sorted_list[length//2])/2
 else:
   median=sorted_list[length//2]
 print(median)
